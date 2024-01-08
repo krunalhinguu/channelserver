@@ -2,6 +2,8 @@ module github.com/rancher/channelserver
 
 go 1.20
 
+replace github.com/rancher/wrangler/v2 => github.com/krunalhinguu/wrangler/v2 v2.29.0-rancher1
+
 replace k8s.io/client-go => k8s.io/client-go v0.20.0
 
 require (
