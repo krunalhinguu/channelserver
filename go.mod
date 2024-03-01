@@ -2,9 +2,12 @@ module github.com/rancher/channelserver
 
 go 1.21
 
-replace github.com/rancher/wrangler/v2 => github.com/krunalhinguu/wrangler/v2 v2.29.0-rancher1
+replace (
+	github.com/rancher/wrangler/v2 => github.com/krunalhinguu/wrangler/v2 v2.29.0-rancher1
+	k8s.io/client-go => github.com/krunalhinguu/client-go v1.29.0-rancher1
+)
 
-replace k8s.io/client-go => k8s.io/client-go v0.20.0
+// replace k8s.io/client-go => k8s.io/client-go v0.20.0
 
 require (
 	github.com/blang/semver v3.5.1+incompatible
@@ -26,7 +29,7 @@ require (
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/google/go-querystring v1.0.0 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
-	github.com/gorilla/websocket v1.4.1 // indirect
+	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
